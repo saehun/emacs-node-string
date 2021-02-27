@@ -5,8 +5,13 @@
   "license": "MIT",
   "main": "dist/index.js",
   "repository": "minidonut/emacs-node-string",
+  "bin": {
+    "emacs-node-string": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
+    "prebuild": "node scripts/build-elisp.js",
+    "postbuild": "scripts/postbuild.sh",
     "test": "NODE_ENV=test jest",
     "lint": "eslint . --ext .js,.ts",
     "start": "ts-node src/index.ts",
