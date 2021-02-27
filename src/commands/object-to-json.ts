@@ -12,7 +12,7 @@ import { Command } from './interface';
  *
  * @return json string
  */
-export const objectToJson: Command = input => {
+const objectToJson: Command = input => {
   const object = eval('(' + input + ')');
   return JSON.stringify(object, undefined, 2);
 };
