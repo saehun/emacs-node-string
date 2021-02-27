@@ -1,10 +1,10 @@
 {
-  "name": "string-commands",
+  "name": "emacs-node-string",
   "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "minidonut/string-commands",
+  "repository": "minidonut/emacs-node-string",
   "scripts": {
     "build": "tsc",
     "test": "NODE_ENV=test jest",

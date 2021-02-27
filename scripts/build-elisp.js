@@ -21,6 +21,6 @@ const elispCommand = command => `
 (defun node-string/${command} (&optional b e)
   "${Case.title(command)}."
   (interactive "r")
-  (call-process-region b e "node-string-commands" t t nil "${command}"))`;
+  (call-process-region b e "emacs-node-string" t t nil "${command}"))`;
 
 fs.writeFileSync('node-string.el', elispProgram(commands.map(elispCommand).join('')));
