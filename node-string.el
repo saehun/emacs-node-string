@@ -12,6 +12,11 @@
   (interactive "r")
   (call-process-region b e "emacs-node-string" t t nil "object-to-json"))
 
+(defun node-string/querystring-to-json (&optional b e)
+  "Querystring to Json."
+  (interactive "r")
+  (call-process-region b e "emacs-node-string" t t nil "querystring-to-json"))
+
 (defun node-string/yaml-to-json (&optional b e)
   "Yaml to Json."
   (interactive "r")
